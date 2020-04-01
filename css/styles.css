@@ -56,6 +56,11 @@ z-index: 0px;
 .btngreen{
     background-color:#00b686;
     color:white;
+}
+
+.btnred{
+    background-color:#c42323;
+    color:white;
 
 
 }
