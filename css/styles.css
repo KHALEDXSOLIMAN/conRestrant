@@ -85,8 +85,9 @@ z-index: 0px;
     min-height: 300px;
     width: 300px;
 }
-#carouselButton{
+#carousel-group{
     right: 0px;
     position: absolute;
+
     bottom: 0px;
 }
