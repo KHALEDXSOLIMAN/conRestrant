@@ -100,3 +100,16 @@ body{
     background-color:#c42323;
     color:white;
 }
+.modal-content{
+   // background: $background-pale;
+    //color:floralwhite;
+  
+     .modal-header{
+      background-color: $background-dark;
+
+      .close{
+          color: floralwhite;
+      }
+  
+    }
+}

@@ -32,8 +32,10 @@
                     <li class="nav-item"> <a class="nav-link" href='contactus.html' ><span class="fa fa-address-card fa-lg"></span> Contact </a> </li>
     
                 </ul>
-                <span class="btn btn-light">
-                    <a data-toggle="modal" data-target="#loginModal">
+
+                <!--login button-->
+                <span class="btn btn-light" id="login-button">
+                    <!-- <a data-toggle="modal" data-target="#loginModal"> -->
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
                     </div>      
@@ -87,10 +89,10 @@
                             <label class="col-12 col-sm-2">Section</label>
                             <div class="row-contant ml-3">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-success active">
+                                    <label class="btn btngreen active">
                                       <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
                                     </label>
-                                    <label class="btn btn-danger">
+                                    <label class="btn btnred">
                                       <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
                                     </label>
                                     
@@ -181,8 +183,9 @@
                     <h1>Ristorante con Fusion</h1>
                     <div>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience.<br> Our lipsmacking creations will tickle your culinary senses!</p>
-                    <span class="btn btn-light btn-lg">
-                        <a data-toggle="modal" data-target="#reserv">
+                    <span class="btn btn-light btn-lg" id="reserve-button">
+                        <!--reserve button-->
+                        <!-- <a data-toggle="modal" data-target="#reserv"> -->
                         <h4>Reserve a Table</h4> </a>
                     </span>
 
@@ -194,6 +197,9 @@
             </div>
         </div>
     </header>
+
+
+    <!--carousel-->
 
     <div class="container">
         <div class="row row-content">
@@ -222,14 +228,13 @@
 
                                
                         </div>
-                        <!--carousel-->
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
                             src="img/alberto.jpg" height="400" width="400" alt="Alberto Somayya">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption  d-none d-md-block">
                                 <h2>Alberto Somayya</h2>
                                 <h4>Executive Chef</h4>
-                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                                <p class="d-none d-sm-block ">Award winning three-star Michelin chef with wide
                                     International experience having worked closely with
                                     whos-who in the culinary world, he specializes in
                                     creating mouthwatering Indo-Italian fusion experiences.
@@ -367,6 +372,8 @@
  <script>
    $(document).ready(function(){
        $('#mycarousel').carousel({interval: 2000});
+
+       
        
        $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
@@ -380,6 +387,13 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+            $("#reserve-button").click(function(){
+           $("#reserv").modal('show');
+       });
+        $("#login-button").click(function(){
+            $("#loginModal").modal('show');
+
+        });
    })
 
 </script>
